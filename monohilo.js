@@ -1,13 +1,14 @@
 
-let i = 0;
+console.log('hola mundo')
 
+let i = 0;
 setInterval(function(){
     i++;
-    console.log(i);
+    console.log('bla ',i);
     if(i === 5){
         console.log('provocamos error')
         let a = i + b;
     }
 },1000)
 
-console.log('hola mundo')
+console.log('chao mundo')
