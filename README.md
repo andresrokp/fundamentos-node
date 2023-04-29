@@ -5,7 +5,7 @@ Repo to practice on node using the gidelines of the platzi course: Fundamentos d
 ## Learning
 
 ### L4 - Monohilo: implicaciones
-- setinterval(fun,t) is a function with 2 params that execute 'fun' each 't' miliseconds
+- setInterval(fun,t) is a function with 2 params that execute 'fun' each 't' miliseconds
 - Set interval does not block the main execution thread
 - the eventLoop (EvLp) gives the order to execute it, but continues its way with the next instructions meanwhile
 - A function writen after a setInterval() will execute immediately after the EvLp touch the setinterval() and its result will prompt before the timeout of the first
@@ -30,7 +30,8 @@ Repo to practice on node using the gidelines of the platzi course: Fundamentos d
 - commands
     - pm2 . production . full monitoring . breaks, logs
     - pm2 start {file} to initiate
-    - pm2 monitor , pm2 status
+    - pm2 monitor
+    - pm2 status
     - pm2 logs
     - pm2 stop {id} or {path}
 - i can retry a process as much i want
