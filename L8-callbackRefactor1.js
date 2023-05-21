@@ -14,14 +14,14 @@ function finalTask(dato) {
 }
 
 function loopTask(dato, times, callbackAfterLoop, counter = 1) {
-    setTimeout(() => {
-        log('loop task - ', dato, counter)
-        if(times == 1) callbackAfterLoop()
-        else {
+    if(times == 1) callbackAfterLoop()
+    else {
+        setTimeout(() => {
+            log('loop task - ', dato, counter)
             times--;
             loopTask(dato,times,callbackAfterLoop, counter+1)
-        }
-    }, 1000);
+        }, 1000);
+    }
 }
 
 initialTask('INIT PAYLOAD',()=>{
